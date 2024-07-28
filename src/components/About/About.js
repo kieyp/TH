@@ -44,6 +44,11 @@ const SectionTitle = styled.h2`
   color: ${textColor}; /* Set color to white */
   margin-bottom: 2rem; /* More spacing for modern look */
   font-family: 'Arial Black', sans-serif;
+
+  @media (max-width: 768px) {
+    font-size: 2.5rem; /* Slightly smaller font on mobile */
+    margin-bottom: 1.5rem; /* Adjust spacing on mobile */
+  }
 `;
 
 const AboutContent = styled.div`
@@ -68,6 +73,10 @@ const AboutDetailsContainer = styled.div`
   padding: 1.5rem;
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Light shadow for modern card look */
+
+  @media (max-width: 768px) {
+    padding: 1rem; /* Reduce padding on mobile */
+  }
 `;
 
 const AboutImage = styled.img`
@@ -77,6 +86,11 @@ const AboutImage = styled.img`
   border-radius: 10px; /* Slight rounding for modern look */
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Shadow for modern look */
   margin-bottom: 2rem; /* Add margin for spacing */
+
+  @media (max-width: 768px) {
+    max-height: 200px; /* Reduce image height on mobile */
+    margin-bottom: 1.5rem; /* Adjust margin on mobile */
+  }
 `;
 
 const StyledParagraph = styled.p`
@@ -86,6 +100,11 @@ const StyledParagraph = styled.p`
   font-size: 1.1rem; /* Slightly larger text for readability */
   text-align: justify; /* Justify text for alignment */
   margin-bottom: 1rem; /* Add margin for spacing */
+
+  @media (max-width: 768px) {
+    font-size: 1rem; /* Slightly smaller text on mobile */
+    margin-bottom: 0.75rem; /* Adjust margin on mobile */
+  }
 `;
 
 // PropTypes

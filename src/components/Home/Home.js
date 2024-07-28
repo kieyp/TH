@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { IconContext } from "react-icons"; // Add this import
+import { IconContext } from "react-icons";
 import { SiGmail } from "react-icons/si";
-import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp"; // Example profile image import
+import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp";
 
 const StyledHome = styled.div`
   position: relative;
@@ -15,7 +15,7 @@ const StyledHome = styled.div`
   color: #fff;
   overflow: hidden;
   text-align: center;
-  padding: 0 2rem; /* Add horizontal padding for small screens */
+  padding: 0 2rem;
 `;
 
 const Overlay = styled.div`
@@ -30,46 +30,51 @@ const Overlay = styled.div`
 const HeroSection = styled.div`
   position: relative;
   z-index: 1;
-  max-width: 700px; /* Increase max-width for better text visibility */
+  max-width: 700px;
   padding: 2rem;
 `;
 
 const HeroTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
-  font-weight: 800; /* Boldest font weight for emphasis */
-  font-size: 2rem; /* Adjusted font size */
+  font-weight: 800;
+  font-size: 2rem;
   margin-bottom: 1rem;
   color: #fff;
-  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Strong text shadow for prominence */
-  line-height: 1.2; /* Adjust line height for better spacing */
-  text-transform: uppercase; /* Convert text to uppercase */
-  
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7);
+  line-height: 1.2;
+  text-transform: uppercase;
+
   @media (max-width: 768px) {
-    font-size: 1.5rem; /* Smaller font size for tablets */
+    font-size: 1.5rem;
   }
-  
+
   @media (max-width: 480px) {
-    font-size: 1.2rem; /* Even smaller font size for phones */
+    font-size: 1.2rem;
   }
 `;
 
 const HeroText = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 1rem; /* Adjusted font size */
+  font-size: 1rem;
   font-weight: 500;
   line-height: 1.6;
   margin-top: 1rem;
-  text-transform: uppercase; /* Convert text to uppercase */
+  text-transform: uppercase;
   color: #fff;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-  
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
   @media (max-width: 768px) {
-    font-size: 0.9rem; /* Smaller font size for tablets */
+    font-size: 0.9rem;
   }
-  
+
   @media (max-width: 480px) {
-    font-size: 0.8rem; /* Even smaller font size for phones */
+    font-size: 0.8rem;
   }
+`;
+
+const HighlightedText = styled.span`
+  color: #ffeb3b; /* Highlight color */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
 `;
 
 const SocialIcons = styled.div`
@@ -82,16 +87,16 @@ const SocialIcons = styled.div`
     transition: color 0.3s ease, transform 0.3s ease;
 
     &:hover {
-      color: #007bff; /* Highlight color on hover */
-      transform: scale(1.1); /* Slightly enlarge icons on hover */
+      color: #007bff;
+      transform: scale(1.1);
     }
 
     @media (max-width: 768px) {
-      font-size: 1.5rem; /* Smaller icon size for tablets */
+      font-size: 1.5rem;
     }
-    
+
     @media (max-width: 480px) {
-      font-size: 1.2rem; /* Even smaller icon size for phones */
+      font-size: 1.2rem;
     }
   }
 `;
@@ -115,16 +120,24 @@ const Home = () => {
       <Overlay />
       <HeroSection>
         <HeroTitle>{getTimeGreeting()}, Welcome to My Website!</HeroTitle>
-        <HeroText>
-          Stay updated with the latest advancements in mechanical engineering.
-        </HeroText>
+        
         <SocialIcons>
+        <HeroText>
+           Contact
+        </HeroText>
           <IconContext.Provider value={{ className: "social-icons" }}>
             <a href="mailto:example@gmail.com">
               <SiGmail />
             </a>
           </IconContext.Provider>
         </SocialIcons>
+        <HeroText>
+          Stay updated with the latest advancements in mechanical engineering.
+        </HeroText>
+        <HeroText>
+           <HighlightedText> As you look at things and wonder how,I dream of great things and ask why not!</HighlightedText>
+        </HeroText>
+       
       </HeroSection>
     </StyledHome>
   );

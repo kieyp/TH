@@ -34,7 +34,7 @@ const MobileMenu = ({ isOpen, toggle }) => {
           Playground
         </MobileMenuLink>
         <MobileButton
-          href="mailto:cheruiyotbony@gmail.com "
+          href="mailto:Kbmwangibilly@gmail.com "
           target="_blank"
           rel="noreferrer"
         >
@@ -46,22 +46,22 @@ const MobileMenu = ({ isOpen, toggle }) => {
       </MobileMenuList>
       <MobileSocials>
         <MobileSocial
-          href="mailto:cheruiyotbony@gmail.com"
+          href="mailto:Kbmwangibilly@gmail.com"
           target="_blank"
           rel="noopener noreferrer"
         >
           Mail
         </MobileSocial>
-        <MobileSocial
+        {/* <MobileSocial
           href="https://github.com/kieyp"
           target="_blank"
           rel="noopener noreferrer"
         >
           GitHub
-        </MobileSocial>
+        </MobileSocial> */}
 
         <MobileSocial
-          href="linkedin.com/in/kipbon/"
+          href="https://www.linkedin.com/in/billy-mwangi-59495a90/"
           target="_blank"
           rel="noopener noreferrer"
         >

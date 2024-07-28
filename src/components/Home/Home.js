@@ -1,8 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { IconContext } from "react-icons";
+import { IconContext } from "react-icons"; // Add this import
 import { SiGmail } from "react-icons/si";
-import profileImage from "../../assets/Trial02.jpg"; // Example profile image import
+import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp"; // Example profile image import
 
 const StyledHome = styled.div`
   position: relative;
@@ -97,38 +97,36 @@ const SocialIcons = styled.div`
 `;
 
 const Home = () => {
-  let today = new Date();
-  let hour = today.getHours();
-  let greeting;
+  const getTimeGreeting = () => {
+    const today = new Date();
+    const hour = today.getHours();
 
-  if (hour < 12) {
-    greeting = "Good morning!";
-  } else if (hour < 18) {
-    greeting = "Good afternoon!";
-  } else {
-    greeting = "Good evening!";
-  }
+    if (hour < 12) {
+      return "Good Morning";
+    } else if (hour < 18) {
+      return "Good Afternoon";
+    } else {
+      return "Good Evening";
+    }
+  };
 
   return (
-    <IconContext.Provider value={{ size: "2.5rem" }}>
-      <StyledHome id="home">
-        <Overlay />
-        <HeroSection>
-          <HeroTitle>
-            {greeting}<br />
-            I AM BILLY
-          </HeroTitle>
-          <HeroText>
-            WELCOME TO MY PERSONAL SPACE WHERE INNOVATION MEETS PASSION.
-          </HeroText>
-          <SocialIcons>
-            <a href="mailto:Billymkings@gmail.com" aria-label="Email">
+    <StyledHome>
+      <Overlay />
+      <HeroSection>
+        <HeroTitle>{getTimeGreeting()}, Welcome to My Website!</HeroTitle>
+        <HeroText>
+          Stay updated with the latest advancements in mechanical engineering.
+        </HeroText>
+        <SocialIcons>
+          <IconContext.Provider value={{ className: "social-icons" }}>
+            <a href="mailto:example@gmail.com">
               <SiGmail />
             </a>
-          </SocialIcons>
-        </HeroSection>
-      </StyledHome>
-    </IconContext.Provider>
+          </IconContext.Provider>
+        </SocialIcons>
+      </HeroSection>
+    </StyledHome>
   );
 };
 

@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { SiGmail } from "react-icons/si";
-import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp"; // Example profile image import
+import profileImage from "../../assets/Trial02.jpg"; // Example profile image import
 
 const StyledHome = styled.div`
   position: relative;

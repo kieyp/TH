@@ -110,7 +110,6 @@ const Footer = () => {
           onClick={toTop}
           data-hover="Let's talk!"
         >
-          Need a developer?
         </FooterBigLink>
       </FooterBigLinkContainer>
 
@@ -121,36 +120,37 @@ const Footer = () => {
           rel="noopener noreferrer"
           aria-label="GitHub"
         >
-          <SiGithub />
+          {/* <SiGithub /> */}
         </ContactLink>
         <ContactLink
-          href="https://www.linkedin.com/in/kipbon/"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="LinkedIn"
+          // href="https://www.linkedin.com/in/kipbon/"
+          // target="_blank"
+          // rel="noopener noreferrer"
+          // aria-label="LinkedIn"
         >
-          <SiLinkedin />
-        </ContactLink>
+          {/* <SiLinkedin /> */}
+        {/* </ContactLink>
         <ContactLink
           href="https://twitter.com/cheruiyotbonie"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Twitter"
         >
-          <SiTwitter />
+          <SiTwitter /> */}
         </ContactLink>
       </FooterSocials>
 
       <FooterContacts>
         <FooterContact>
-          <ContactHeader>Social</ContactHeader>
+          <ContactHeader>Social Media LInks</ContactHeader>
+          <ContactHeader>Coming Soon</ContactHeader>
         </FooterContact>
       </FooterContacts>
 
       <FooterLine />
 
       <div style={{ textAlign: "center", color: "#888", marginTop: "1rem" }}>
-        &copy; {year} Bon. All Rights Reserved.
+        &copy; {year} Billy. All Rights Reserved.
       </div>
     </StyledFooter>
   );

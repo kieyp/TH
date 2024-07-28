@@ -3,7 +3,7 @@ export const Designer = () => {
     <div
       style={{ textAlign: "center", backgroundColor: "black", color: "white" }}
     >
-      Made with ❤️ By Boniface Cheruiyot.
+      {/* Made By Bon . */}
     </div>
   );
 };

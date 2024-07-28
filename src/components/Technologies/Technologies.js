@@ -10,7 +10,8 @@ import { iconsData } from "./icons";
 const Technologies = () => {
   return (
     <TechnologiesContainer id="skills">
-      <TechnologiesHeader>Technologies I am familiar with</TechnologiesHeader>
+      <TechnologiesHeader>FIELD OF EXPERTISE</TechnologiesHeader>
+      <TechnologiesHeader>STEAM BOILERS</TechnologiesHeader>
 
       <TechnologiesIcons>
         {iconsData.map((iconData) => {

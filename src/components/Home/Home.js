@@ -60,18 +60,26 @@ const HeroSection = styled.div`
 const HeroTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-weight: 800; /* Boldest font weight for emphasis */
-  font-size: 5rem; /* Significantly larger font size */
+  font-size: 3rem; /* Adjusted font size */
   margin-bottom: 1rem;
   color: #fff;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Strong text shadow for prominence */
   line-height: 1.2; /* Adjust line height for better spacing */
   animation: ${slideIn} 1s ease-out;
   text-transform: uppercase; /* Convert text to uppercase */
+  
+  @media (max-width: 768px) {
+    font-size: 2.5rem; /* Smaller font size for tablets */
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 2rem; /* Even smaller font size for phones */
+  }
 `;
 
 const HeroText = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.2rem; /* Adjusted font size */
   font-weight: 500;
   line-height: 1.6;
   margin-top: 1rem;
@@ -79,6 +87,14 @@ const HeroText = styled.p`
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
   animation: ${fadeIn} 1.5s ease-out;
+  
+  @media (max-width: 768px) {
+    font-size: 1rem; /* Smaller font size for tablets */
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 0.9rem; /* Even smaller font size for phones */
+  }
 `;
 
 const SocialIcons = styled.div`
@@ -94,6 +110,14 @@ const SocialIcons = styled.div`
     &:hover {
       color: #007bff; /* Highlight color on hover */
       transform: scale(1.1); /* Slightly enlarge icons on hover */
+    }
+
+    @media (max-width: 768px) {
+      font-size: 2rem; /* Smaller icon size for tablets */
+    }
+    
+    @media (max-width: 480px) {
+      font-size: 1.5rem; /* Even smaller icon size for phones */
     }
   }
 `;

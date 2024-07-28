@@ -1,31 +1,8 @@
 import React from "react";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { IconContext } from "react-icons";
 import { SiGmail } from "react-icons/si";
 import profileImage from "../../assets/How-to-stay-updated-with-latest-advancements-in-mechanical-engineering.webp"; // Example profile image import
-
-// Keyframes for animations
-const fadeIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-`;
-
-const slideIn = keyframes`
-  from {
-    opacity: 0;
-    transform: translateX(-100px);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
-`;
 
 const StyledHome = styled.div`
   position: relative;
@@ -60,49 +37,46 @@ const HeroSection = styled.div`
 const HeroTitle = styled.h1`
   font-family: 'Montserrat', sans-serif;
   font-weight: 800; /* Boldest font weight for emphasis */
-  font-size: 3rem; /* Adjusted font size */
+  font-size: 2rem; /* Adjusted font size */
   margin-bottom: 1rem;
   color: #fff;
   text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Strong text shadow for prominence */
   line-height: 1.2; /* Adjust line height for better spacing */
-  animation: ${slideIn} 1s ease-out;
   text-transform: uppercase; /* Convert text to uppercase */
   
   @media (max-width: 768px) {
-    font-size: 2.5rem; /* Smaller font size for tablets */
+    font-size: 1.5rem; /* Smaller font size for tablets */
   }
   
   @media (max-width: 480px) {
-    font-size: 2rem; /* Even smaller font size for phones */
+    font-size: 1.2rem; /* Even smaller font size for phones */
   }
 `;
 
 const HeroText = styled.p`
   font-family: 'Roboto', sans-serif;
-  font-size: 1.2rem; /* Adjusted font size */
+  font-size: 1rem; /* Adjusted font size */
   font-weight: 500;
   line-height: 1.6;
   margin-top: 1rem;
   text-transform: uppercase; /* Convert text to uppercase */
   color: #fff;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better readability */
-  animation: ${fadeIn} 1.5s ease-out;
   
   @media (max-width: 768px) {
-    font-size: 1rem; /* Smaller font size for tablets */
+    font-size: 0.9rem; /* Smaller font size for tablets */
   }
   
   @media (max-width: 480px) {
-    font-size: 0.9rem; /* Even smaller font size for phones */
+    font-size: 0.8rem; /* Even smaller font size for phones */
   }
 `;
 
 const SocialIcons = styled.div`
   margin-top: 2rem;
-  animation: ${fadeIn} 2s ease-out;
 
   & > a {
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #fff;
     margin: 0 1rem;
     transition: color 0.3s ease, transform 0.3s ease;
@@ -113,11 +87,11 @@ const SocialIcons = styled.div`
     }
 
     @media (max-width: 768px) {
-      font-size: 2rem; /* Smaller icon size for tablets */
+      font-size: 1.5rem; /* Smaller icon size for tablets */
     }
     
     @media (max-width: 480px) {
-      font-size: 1.5rem; /* Even smaller icon size for phones */
+      font-size: 1.2rem; /* Even smaller icon size for phones */
     }
   }
 `;
@@ -139,7 +113,7 @@ const Home = () => {
     <IconContext.Provider value={{ size: "2.5rem" }}>
       <StyledHome id="home">
         <Overlay />
-        <HeroSection className="fade-in">
+        <HeroSection>
           <HeroTitle>
             {greeting}<br />
             I AM BILLY
@@ -147,7 +121,7 @@ const Home = () => {
           <HeroText>
             WELCOME TO MY PERSONAL SPACE WHERE INNOVATION MEETS PASSION.
           </HeroText>
-          <SocialIcons className="social-icons">
+          <SocialIcons>
             <a href="mailto:Billymkings@gmail.com" aria-label="Email">
               <SiGmail />
             </a>

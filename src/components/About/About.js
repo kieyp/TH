@@ -84,6 +84,8 @@ const StyledParagraph = styled.p`
   color: ${textColor}; /* White text for contrast */
   font-family: 'Open Sans', sans-serif;
   font-size: 1.1rem; /* Slightly larger text for readability */
+  text-align: justify; /* Justify text for alignment */
+  margin-bottom: 1rem; /* Add margin for spacing */
 `;
 
 // PropTypes
@@ -102,11 +104,14 @@ const About = () => {
         <AboutDetailsContainer>
           <StyledParagraph>
             Billy Mwangi is a registered graduate mechanical engineer with experience in maintenance management, project management, process control and change management. He has been involved in projects that have reduced CO2 emission and the carbon footprint in Kenya. Also; he has been engaged in biomass waste conversion to green energy sources and industrial investment grade energy audits.
-
-            Billy is passionate on energy management, project management, renewable and sustainable energy, environment and climate change. He is enthusiastic about steam boilers and distribution systems, compressed air systems (CAS), fluid flow systems, Heating Ventilation and Air Conditioning (HVAC) and refrigeration systems, Non Destructive techniques (NDT) and research.
-
+          </StyledParagraph>
+          <StyledParagraph>
+            Billy is passionate about energy management, project management, renewable and sustainable energy, environment and climate change. He is enthusiastic about steam boilers and distribution systems, compressed air systems (CAS), fluid flow systems, Heating Ventilation and Air Conditioning (HVAC) and refrigeration systems, Non Destructive techniques (NDT) and research.
+          </StyledParagraph>
+          <StyledParagraph>
             Special keenness on management of industrial energy cost comes from his passion to continually manage and reduce cost so as to improve product profitability. He derives endless satisfaction in managing industrial energy cost.
-
+          </StyledParagraph>
+          <StyledParagraph>
             Billy’s spare time is spent with family, mountaineering, swimming, playing chess and football, reading novels and watching movies.
           </StyledParagraph>
         </AboutDetailsContainer>

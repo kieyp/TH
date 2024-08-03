@@ -9,7 +9,7 @@ const Projects = () => {
   return (
     <StyledProjects id="projects">
       <SectionHeading>
-      <SectionTitle>PROJECTS</SectionTitle>
+      <SectionTitle>RECENT PROJECTS</SectionTitle>
       </SectionHeading>
       <ProjectsContainer>
         {projectData.map((project) => {

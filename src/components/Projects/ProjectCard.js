@@ -30,7 +30,7 @@ const ProjectCardComponent = ({
           </ProjectDetails>
         </ProjectCard>
       </IconContext.Provider>
-      <div>{description}</div>
+      <div className="description">{description}</div>
   
     </>
   );

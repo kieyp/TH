@@ -10,6 +10,7 @@ import booking01mobile from "../../assets/projects/7fef12d7-d1a5-46f7-bbbe-4f149
 import booking02mobile from "../../assets/projects/025c6746-e2db-4b50-bf6d-b64222a6fdb8.jpeg";
 import booking03mobile from "../../assets/projects/ac9273c7-fa9e-4fcf-abc4-010d38d4d816.jpeg";
 import booking04mobile from "../../assets/projects/ac9273c7-fa9e-4fcf-abc4-010d38d4d816.jpeg";
+import booking05mobile from "../../assets/projects/0db65f58-85fc-45e9-8eac-c094ed0aecaf.jpeg";
 
 export {
   meesho1laptop,
@@ -23,5 +24,6 @@ export {
   booking01mobile,
   booking02mobile,
   booking03mobile,
-  booking04mobile
+  booking04mobile,
+  booking05mobile
 };

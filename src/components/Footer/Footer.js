@@ -142,8 +142,8 @@ const Footer = () => {
 
       <FooterContacts>
         <FooterContact>
-          <ContactHeader>Social Media LInks</ContactHeader>
-          <ContactHeader>Coming Soon</ContactHeader>
+          <ContactHeader>Call</ContactHeader>
+          <ContactHeader>0712217677</ContactHeader>
         </FooterContact>
       </FooterContacts>
 

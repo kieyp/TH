@@ -126,7 +126,7 @@ const Home = () => {
            Contact
         </HeroText>
           <IconContext.Provider value={{ className: "social-icons" }}>
-            <a href="mailto:example@gmail.com">
+            <a href="mailto:billymkings@gmail.com">
               <SiGmail />
             </a>
           </IconContext.Provider>
